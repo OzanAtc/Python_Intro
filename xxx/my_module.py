@@ -27,15 +27,49 @@ Note that some of the steps in the flow chart will require you to think about ho
 
 def calculateMoney(amount, payment):
     amount = random.randint(0, 20) + round(random.randint(0, 100) / 100, 2)
-    change = payment - amount
+    print(amount)
+
+    if payment >= amount:
+        return change = payment - amount
 
     if change > 0:
 
+    else:
+        print("No change")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    if change > 0:
+
+        d = 0
         d = int(change)
         change -= d
 
         if change > 0:
-
             q = 0
             i = 0
             n = 0
@@ -43,15 +77,14 @@ def calculateMoney(amount, payment):
             q = q * 0.25  # quarter change calculation
             i = i * 0.10  # dimes change calculation
             n = n * 0.05  # nickel change calculation
-            change = change - q + i + n  # calculate the owed money in change
+            change = change - (q + i + n)  # calculate the owed money in changes
 
             n = n + round(change * 2, 1) * 10  # penny change should be rounded up to nickel
-
             return f"You got {d} dollars, {q} quarters + {i} dimes, and {n} nickels back in change"
-
         else:
             return f"You got {d} dollars, {q} quarters + {i} dimes, and {n} nickels back in change"
     else:
-        print("There is no change owed")
+            return "There is no change owed"
 
-print(calculateMoney(20, 10))
+
+print(calculateMoney(8, 10))
