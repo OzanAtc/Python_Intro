@@ -56,4 +56,4 @@ def calculateMoney(amount, payment):
         print("No change owed")
 
 
-print(calculateMoney(amount,18))
+print(calculateMoney(9,10))
