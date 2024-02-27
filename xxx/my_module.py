@@ -36,33 +36,7 @@ def calculateMoney(amount, payment):
 
     else:
         print("No change")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
     if change > 0:
 
         d = 0
